@@ -13,6 +13,7 @@ We will be using an EDR solution (Endpoint Detection and Response) tool, with a 
 
 -A Linux Endpoint or VM: This is our attacker, we will use it to setup a Command and Control type of attack (C2)
 -A Windows OS Endpoint or VM: This is our Victim, our guienea pig, we will attack it, and then change hats colors to defend it.
+-Both devices must be on the same Network.
 -A Freee Organization in LimaCharlie: You can get up to two sensors for FREE.
 
 ## Getting Started
@@ -33,3 +34,15 @@ dControl.exe /E  = Enabled Windows Defender
 ```
 Result:
 ![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/WinDefenderOFF.png "Security Defender Disabled")
+
+-Another useful thing to do, would be to prevent this Windows device from going to sleep, in case we will work on this during a long session.
+We will modify Windows' power plan from Command Prompt as admim. Run:
+
+```
+powercfg /change standby-timeout-ac 0
+powercfg /change standby-timeout-dc 0
+powercfg /change monitor-timeout-ac 0
+powercfg /change monitor-timeout-dc 0
+powercfg /change hibernate-timeout-ac 0
+powercfg /change hibernate-timeout-dc 0
+```
