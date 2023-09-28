@@ -1,10 +1,14 @@
-# Project Title
+# Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker
 
-Simple overview of use/purpose.
+Ransomwares are some of the naties type of virus affecting several companies now a days, when it happens it's probably too late for Blue Team,
+let's see if we can prevent one of the biggest flags of an incoming Ransomware Attack to your Organization, by detecting Shadow Copy deletion commands.
+We will be using an EDR solution (Endpoint Detection and Response) tool, with a FREE Organization containing two devices, named LimaCharlie.
 
-## Description
+## Requirenemnts
 
-An in-depth paragraph about your project and overview of use.
+-A Linux Endpoint or VM: This is our attacker, we will use it to setup a Command and Control type of attack (C2)
+-A Windows OS Endpoint or VM: This is our Victim, our guienea pig, we will attack it, and then change hats colors to defend it.
+-A Freee Organization in LimaCharlie: You can get up to two sensors for FREE.
 
 ## Getting Started
 
