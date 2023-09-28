@@ -25,4 +25,11 @@ Enter Sordum's Defender Control:
 On a real world scenario, Social Engineering is needed to deceieve a user into running a Script that could launc this tool silently '/s'
 and auto disable Windows Defender for us, but for this excersie I will do it manually:
 
+```
+Run As Administrator from Windows Terminal or CMD.
+
+dControl.exe /D  = Disables Windows Defender
+dControl.exe /E  = Enabled Windows Defender
+```
+Result:
 ![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/WinDefenderOFF.png "Security Defender Disabled")
