@@ -26,3 +26,4 @@ On a real world scenario, Social Engineering is needed to deceieve a user into r
 and auto disable Windows Defender for us, but for this excersie I will do it manually:
 
 [logo]: https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/WinDefenderOFF.png "Windows Defender Silenced"
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/WinDefenderOFF.png "Logo Title Text 1")
