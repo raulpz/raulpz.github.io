@@ -99,6 +99,22 @@ Select the previously created Key from the drop-down menu and click Select.
 Now follow the instructions outlined, to get our Sensor into the Windows Endpoint.
 ![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/install-sensor.png)
 
+Wait a couple of minutes to go back to Sensors List, and your new agent should be already reporting back to our EDR.
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/sensor-ok.png)
+
+Now that our Sensor is UP and Online, we will need to give it some specific instructions about the type of data we want from SysMon.
+Time to create a new Artifact Collection.
+
+Go to:
+1-“Artifact Collection Rules”and click “Add Rule”
+2-Name: windows-sysmon-logs
+3-Platforms: Windows
+4-Path Pattern: wel://Microsoft-Windows-Sysmon/Operational:*
+5-Retention Period: 30
+6-Then Click “Save”
+
+It should look like this:
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Artifacts-collection.png)
 
 
 
