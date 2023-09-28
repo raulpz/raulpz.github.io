@@ -4,7 +4,7 @@
 
 ### Small\Hobbie Projects
 
-## Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker
+## Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker with LimaCharlie EDR
 
 Ransomware is some of the most dangerous type of virus affecting several companies now a days, when it happens it's probably too late for Blue Team,
 let's see if we can prevent one of the biggest flags of an incoming Ransomware Attack to your Organization, by detecting Shadow Copy deletion commands.
@@ -76,8 +76,29 @@ Get-Service sysmon64
 ```
 ![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Sysmon64OK.png)
 
-## Installing our EDR agent (this is where the show beings)
+## Setting up a new LimaCharlie Organization
+
+What is an EDR?
+Endpoint Detection and Response (EDR) is an endpoint security solution that continuously monitors end-user devices to detect and respond to cyber threats like ransomware and malware.
+
 A LimaCharlie account is needed, with one Organization created, you may create one with whatever name you want.
 
 [LimaCharlie Registration HERE](https://app.limacharlie.io/signup)
+
+## Installing our EDR agent (this is where the show beings).
+
+Once we are logged in, we will need to go to Sensors | Sensors List | Add Sensor:
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Add-Sensor.png)
+
+What's a Sensor?
+To put it simple, it's our secret agent, infiltrated in the O.S. to report back almost every single bit of network changes, settings changes, unusual acitivty and telemetry in General, back to our EDR solution.
+
+After selecting Windows, an installation key is required, select "Create New", and give it a name, the Windows Hostname will do for now.
+Select the previously created Key from the drop-down menu and click Select.
+
+Now follow the instructions outlined, to get our Sensor into the Windows Endpoint.
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/install-sensor.png)
+
+
+
 
