@@ -97,10 +97,10 @@ After selecting Windows, an installation key is required, select "Create New", a
 Select the previously created Key from the drop-down menu and click Select.
 
 Now follow the instructions outlined, to get our Sensor into the Windows Endpoint.
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/install-sensor.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/install-sensor.png)
 
 Wait a couple of minutes to go back to Sensors List, and your new agent should be already reporting back to our EDR.
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/sensor-ok.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/sensor-ok.png)
 
 Now that our Sensor is UP and Online, we will need to give it some specific instructions about the type of data we want from SysMon.
 Time to create a new Artifact Collection.
@@ -119,7 +119,7 @@ Go to:
 6-Then Click “Save”
 
 It should look like this:
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Artifacts-collection.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Artifacts-collection.png)
 
 ## Onto the attacker Linux VM
 
@@ -142,4 +142,4 @@ Finally we make sure it's alive, by running:
 sliver-server
 ```
 We should see something like this:
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/sliver-server.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/sliver-server.png)
