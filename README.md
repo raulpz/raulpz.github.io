@@ -74,7 +74,7 @@ Let's Verify Sysmon is up and running:
 ```
 Get-Service sysmon64
 ```
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Sysmon64OK.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Sysmon64OK.png)
 
 ## Setting up a new LimaCharlie Organization
 
@@ -88,7 +88,7 @@ A LimaCharlie account is needed, with one Organization created, you may create o
 ## Installing our EDR agent (this is where the show beings).
 
 Once we are logged in, we will need to go to Sensors | Sensors List | Add Sensor:
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Add-Sensor.png)
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Add-Sensor.png)
 
 What's a Sensor?
 To put it simple, it's our secret agent, infiltrated in the O.S. to report back almost every single bit of network changes, settings changes, unusual acitivty and telemetry in General, back to our EDR solution.
