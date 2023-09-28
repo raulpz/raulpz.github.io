@@ -107,14 +107,39 @@ Time to create a new Artifact Collection.
 
 Go to:
 1-“Artifact Collection Rules”and click “Add Rule”
+
 2-Name: windows-sysmon-logs
+
 3-Platforms: Windows
+
 4-Path Pattern: wel://Microsoft-Windows-Sysmon/Operational:*
+
 5-Retention Period: 30
+
 6-Then Click “Save”
 
 It should look like this:
 ![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/Artifacts-collection.png)
 
+## Onto the attacker Linux VM
 
+I'm ussing this using SSH from the Terminal, you may use Putty or any other software to connect to your Attacker VM via SSH.
 
+We will use Sliver Server for this C2 attack purpose. Some will argue Cobalt Strike is better, but it costs money.
+
+Install it by runnig this command from your Linux SSH Session:
+```
+curl https://sliver.sh/install|sudo bash
+```
+
+And let's add a new Directory to store the bad payload:
+```
+mkdir -p /opt/sliver
+```
+
+Finally we make sure it's alive, by running:
+```
+sliver-server
+```
+We should see something like this:
+![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/sliver-server.png)
