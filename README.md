@@ -34,7 +34,7 @@ dControl.exe /D  = Disables Windows Defender
 dControl.exe /E  = Enabled Windows Defender
 ```
 Result:
-![alt text](https://github.com/raulpz/raulpz.github.io/blob/main/assets/images/WinDefenderOFF.png "Security Defender Disabled")
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/WinDefenderOFF.png "Security Defender Disabled")
 
 -Another useful thing to do, would be to prevent this Windows device from going to sleep, in case we will work on this during a long session.
 We will do this, by modifying Windows' Power Plan from Command Prompt as administrator, Run:
