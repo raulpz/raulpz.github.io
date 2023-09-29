@@ -72,6 +72,19 @@ slowhttptest -c 3000 -H -g -o ./output_file -i 10 -r 200 -t POST -u http://52.XX
 ```
 I can't say much about this one, except is hosted in MS Azure.
 
+Results:
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Slowhttpresult.png)
+
+## Conclusion:
+
+Even though the server was not down, it experienced severe slowness, and apache logs where accepting all incoming fake connections.
+
+We will need to inform our client about their load balance, no Slow DDOS packets should be hitting their HTTTP Server.
+
+END.
+
+raul@pinedo.xyz
+
 
 
 
