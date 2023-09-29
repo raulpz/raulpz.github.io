@@ -266,5 +266,20 @@ These process are the ones attacking our Windows O.S. with Command and Control (
 ![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/LimaCharliePIDs.png)
 
 We can also do some recon, right there, and reveal our attacker's IP address and port number being used:
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/attackerIdentity.png)
 
+From there, the PATH is also exposed, so let's go to c:\Users\User\Downloads\, and inspect our 'APPLICABLE_SUBSTANCE.exe' payload.
+There is an option to Hash it (a Hash is unique), against Virus Total DB, most of the Time, a match will be found (good), sometimes it will not (not that good).
+If it's not found, it's probably a new virus or one that hasn't been reported.
 
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/PayloadHash.png)
+In our case it was not found, but that is fine.
+
+During real world scenarios, this might be a false positive, but pay close attention to the ports, the IP, the files being touched by this, and Registry Keys as well.
+If you feel this is malware, stick with it till the end, there no space for "chance" in cybersecurity, because the price to pay for a mistake is high.
+
+Cover your assets, and make sure (document) due diligence was followed before flagging something as Safe (or False Positive).
+
+From here it's a matter of killing it from LimaCharlie, or better yet, build a Detection and Response Rule with LimaCharlie.
+
+END
