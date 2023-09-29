@@ -1,8 +1,10 @@
-# Enterprise IT Systems Advisor
+# Enterprise IT Advisor , Software QA Professional , BUG tracker
 
-#### Technical Skills: UNIX FreeBSD, Python, MariaDB, Azure(adminstration), Security Patching
+### Technical Skills: UNIX FreeBSD, Python, MariaDB, Azure(adminstration), Security Patching
 
-### Small\Hobbie Projects
+#### Small\Hobbie Projects
+
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/security_banner.jpg)
 
 ## Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker with LimaCharlie EDR
 
