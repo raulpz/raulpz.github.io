@@ -1,6 +1,6 @@
-# Enterprise IT Advisor , Software QA Professional , BUG tracker
+# Enterprise IT Advisor, Software QA Tester, Bug tracker, Linux Mint Daily User
 
-### Technical Skills: UNIX FreeBSD, Python, MariaDB, Azure(adminstration), Security Patching
+### Technical Skills: UNIX FreeBSD, Python, MariaDB, Azure(adminstration), Security Patching, unRAID
 
 #### Small\Hobbie Projects
 
