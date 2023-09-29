@@ -10,6 +10,7 @@ This will test your company's load balancer, your HTTPD config file, and the abi
 
 -Permission from your Victim, please make sure you are authorized to perform this test.
 
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/SlowDDOSpicture.png)
 
 ## Some Background:
 A Slow DDoS (Distributed Denial of Service) attack is a type of cyber attack where the attacker deliberately slows down the target system's performance rather than overwhelming it with a massive volume of traffic all at once. In simple terms:
