@@ -238,7 +238,33 @@ info
 whoami
 getprivs
 ```
-This output confirma we are ready to do some mock-damage:
+This output confirms we are ready to do some mock-damage:
 ![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/Test-commands-c2.png)
 
-Next part - Coming Soon.
+#### Time to attack!
+
+We are going to run the 'pwd' and the 'netstat' commands.
+```
+pwd
+netsat
+```
+The first one is to see where we at (Current Directory), and the second one will display the Active Connections, Process ID and Program in charged of a connection.
+Las we could run the command ps -T, to see a list of currently opened processes in Windows.
+
+The output will be:
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/ps-T.png)
+
+Notice how we have Yello Warning Sign, pointing to SysMon64, it's there to notify attackers there is security software installed\monitoring this computer.
+
+#### We made some noise, so now our EDR (endpoint detection and response) solution, LimaCharlie, should have information reported by our agent (Sensor).
+
+Go back to your Organization | Sensors | Select our Windows Sensor | Processes (from the menu on the Left).
+
+Here we will be able to see two procees flagged in Yellow, and with the icon telling us this EXE might be transmitting data (Upload, Download or both).
+These process are the ones attacking our Windows O.S. with Command and Control (C2) methodology.
+
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/LimaCharliePIDs.png)
+
+We can also do some recon, right there, and reveal our attacker's IP address and port number being used:
+
+
