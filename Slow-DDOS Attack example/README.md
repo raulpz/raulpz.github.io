@@ -1,7 +1,7 @@
 Let's testhow robust our infrastructure by firing Slow DDOS type of attacks.
 This will test your company's load balancer, your HTTPD config file, and the ability to only accept Complete HTTP headers.
 
-##Some Background:
+#Some Background:
 A Slow DDoS (Distributed Denial of Service) attack is a type of cyber attack where the attacker deliberately slows down the target system's performance rather than overwhelming it with a massive volume of traffic all at once. In simple terms:
 
 ##Traditional DDoS Attack:
