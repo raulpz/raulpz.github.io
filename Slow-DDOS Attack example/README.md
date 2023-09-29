@@ -1,6 +1,6 @@
 # Slow DDOS Attacks (not your typical weekend DDOS Attack)
 
-Let's testhow robust our infrastructure by firing Slow DDOS type of attacks.
+Let's test how robust our infrastructure by firing Slow DDOS type of attacks.
 This will test your company's load balancer, your HTTPD config file, and the ability to only accept Complete HTTP headers.
 
 ## Materials needed
