@@ -47,6 +47,31 @@ Detection: Slow DDoS attacks can be harder to detect since they mimic normal tra
 Defending against Slow DDoS attacks may require different strategies than those used for traditional DDoS attacks. Traditional DDoS protection measures may not be as effective against slow and subtle attacks.
 In essence, the main distinction lies in the pacing and approach: traditional DDoS attacks are like a sudden traffic jam, while Slow DDoS attacks are akin to a gradual increase in traffic that eventually leads to congestion.
 
+## Test:
+
+I will be using the terminal with super user (sudo su) rights.
+
+First we pull the image from a pre built Docker Container (There are other ways but this is the quickest one).
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/DockerNope.png)
+
+Shame on me, I forgot to install Docker into this VM let's do it ^ ^.
+
+Good, now it's time to install our attack tool, SlowHttpTest and run it to see the parameters available.
+
+```
+docker pull frapsoft/slowhttptest
+docker run frapsoft/slowhttptest
+```
+
+I just highlighted the important parameters here.
+![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/SlowHttpTestParams.png)
+
+This is the command I will use, replace the IP with the Victim's IP address
+```
+slowhttptest -c 3000 -H -g -o ./output_file -i 10 -r 200 -t POST -u http://52.XXX.XXX.XXX/ -x 24 -p 2
+```
+I can't say much about this one, except is hosted in MS Azure.
+
 
 
 
