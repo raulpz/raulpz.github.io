@@ -1,5 +1,3 @@
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
-
 Let's testhow robust our infrastructure by firing Slow DDOS type of attacks.
 This will test your company's load balancer, your HTTPD config file, and the ability to only accept Complete HTTP headers.
 
