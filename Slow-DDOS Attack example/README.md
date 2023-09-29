@@ -33,8 +33,9 @@ Intensity: Traditional DDoS focuses on overwhelming the target with a high volum
 Detection: Slow DDoS attacks can be harder to detect since they mimic normal traffic patterns more closely compared to the sudden spikes associated with traditional DDoS attacks.
 
 
-## Mitigation: Defending against Slow DDoS attacks may require different strategies than those used for traditional DDoS attacks. Traditional DDoS protection measures may not be as effective against slow and subtle attacks.
+## Mitigation: 
 
+Defending against Slow DDoS attacks may require different strategies than those used for traditional DDoS attacks. Traditional DDoS protection measures may not be as effective against slow and subtle attacks.
 In essence, the main distinction lies in the pacing and approach: traditional DDoS attacks are like a sudden traffic jam, while Slow DDoS attacks are akin to a gradual increase in traffic that eventually leads to congestion.
 
 
