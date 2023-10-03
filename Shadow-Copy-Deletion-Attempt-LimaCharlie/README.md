@@ -1,9 +1,3 @@
-# Enterprise IT Advisor, Software QA Tester, Bug tracker, Linux Mint Daily User
-
-### Technical Skills: UNIX FreeBSD, Python, MariaDB, Azure(adminstration), Security Patching, unRAID
-
-#### Small\Hobbie Projects
-
 ![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/security_banner.jpg)
 
 ## Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker with LimaCharlie EDR
