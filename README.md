@@ -21,12 +21,17 @@
 -->
 <h2> 🤳 Connect with me:</h2>
 
-[<img align="left" alt="RaulPinedo | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="RaulPinedo | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-
-[Email]: raul@pinedo.xyz
-[linkedin]: https://linkedin.com/in/rpinedoz
-[instagram]: https://www.instagram.com/joshmadakor/](https://www.instagram.com/raulz182/
+<div id="badges">
+  <a href="https://www.linkedin.com/in/rpinedoz/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+ 
+  <br>
+  Email:
+  <a href="mailto:raul@pinedo.xyz">
+    <img src="https://img.shields.io/badge/raul@pinedo.xyz-8A2BE2" alt="Email"/>
+  </a>
+</div>
 
 <!--
 - 🔭 I’m currently working on ...
