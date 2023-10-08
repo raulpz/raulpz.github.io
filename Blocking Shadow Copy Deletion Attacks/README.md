@@ -46,8 +46,10 @@ Now if we go back to our EDR's organization named Home-Lab-PTY, and head over to
 It even tells us, it's coming from a Powershell prompt.
 
 OK, now let's click on "View Event Timeline", this will take us to our timeline tab, and from there we can build a Detection and Response Rule for this event.
-<img src="https://imgur.com/3ynooXM.png" height="80%" width="80%"/>
-<img src="https://imgur.com/nButIix.png" height="80%" width="80%"/>
+
+<img src="https://imgur.com/3ynooXM.png" height="60%" width="60%"/>
+
+<img src="https://imgur.com/nButIix.png" height="60%" width="60%"/>
 
 
 <p align="center">
