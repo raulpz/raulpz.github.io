@@ -68,7 +68,7 @@ And a task action that involves denying access to a directory structure (deny_tr
 
 <img src="https://imgur.com/qwq252u.png" height="60%" width="60%"/>
 
-Hit Save.
+Hit Save Rule.
 
 For a Reference visit: [Sensor Commands](https://docs.limacharlie.io/docs/sensors-sensor-commands#deny_tree "LimaCharlie Documentation - deny_tree")
 
