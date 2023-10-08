@@ -52,34 +52,37 @@ OK, now let's click on "View Event Timeline", this will take us to our timeline 
 <img src="https://imgur.com/nButIix.png" height="60%" width="60%"/>
 
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+**** Crafting the Response Rule
+
+Here we are going to use the default generated Detection rule, for the response part, I will use this:
+```
+- action: report
+  name: VSS-KILL-SWITCH
+- action: task
+  command:
+    - deny_tree
+    - <<routing/parent>>
+```
+This defines an action named "VSS-KILL-SWITCH" of type report. When a condition is met, it will generate a report with this name.
+And a task action that involves denying access to a directory structure (deny_tree) with a placeholder for the parent routing information.
+
+<img src="https://imgur.com/qwq252u.png" height="60%" width="60%"/>
+
+Hit Save.
+
+For a Reference visit: [Sensor Commands](https://docs.limacharlie.io/docs/sensors-sensor-commands#deny_tree "LimaCharlie Documentation - deny_tree")
+
+#### Done
+This will prevent future Command and Control Attacks (C2) , who target Windows' Shadow Copies.
+
+Test your rule by re running the command from Sliver-Server (using your Ubuntu Linux Server VM).
+```
+vssadmin delete shadows /all
+```
+
+END
+
+raul@pinedo.xyz
 
 <!--
  ```diff
