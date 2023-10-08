@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/raulpz/raulpz.github.io/main/assets/images/security_banner.jpg)
 
-## Detect a Shadow Copy Removal attempts perpetrated by unauthorized attacker with LimaCharlie EDR
+## Detecting and Hashing a malicious payload with LimaCharlie EDR
 
 Ransomware is some of the most dangerous type of virus affecting several companies now a days, when it happens it's probably too late for Blue Team,
 let's see if we can prevent one of the biggest flags of an incoming Ransomware Attack to your Organization, by detecting Shadow Copy deletion commands.
