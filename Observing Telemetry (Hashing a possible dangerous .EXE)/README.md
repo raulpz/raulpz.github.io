@@ -112,9 +112,9 @@ Rerun the procdump command from Sliver Server, and our new Detection and Respons
 
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+END
+
+raul@pinedo.xyz
 
 <!--
  ```diff
