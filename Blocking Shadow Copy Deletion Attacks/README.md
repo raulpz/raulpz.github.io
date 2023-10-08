@@ -34,6 +34,21 @@ shell
 There will be a warning about this being bad for Operations Security, we will answer Yes and hit Enter.
 Now we are ready to launch any command we like from Powershell with Administrator's Rights.
 
+We will then run the command that tells Windows to nuke it's Shadow Copies of files and folders:
+```
+vssadmin delete shadows /all
+```
+The command may fail to do so, but we just want to make some noise, to generate Telemetry data for our LimaCharlie Sensor.
+
+Now if we go back to our EDR's organization named Home-Lab-PTY, and head over to detections; it should be raising the flag for a Shadow Copies Deletion Command being executed.
+
+<img src="https://imgur.com/DrDt5gC.png" height="80%" width="80%"/>
+It even tells us, it's coming from a Powershell prompt.
+
+OK, now let's click on "View Event Timeline", this will take us to our timeline tab, and from there we can build a Detection and Response Rule for this event.
+<img src="https://imgur.com/3ynooXM.png" height="80%" width="80%"/>
+<img src="https://imgur.com/nButIix.png" height="80%" width="80%"/>
+
 
 <p align="center">
 Launch the utility: <br/>
