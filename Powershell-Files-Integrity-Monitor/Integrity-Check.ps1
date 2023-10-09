@@ -84,7 +84,8 @@ elseif ($response -eq "2".ToUpper()) {
            }
            else {
               #File has been compromised
-             Write-Host "A File was modified!!, Integrity is Compromised!!" -ForegroundColor Yellow
+             Write-Host "A File was modified!!, Integrity is Compromised!!" -ForegroundColor Red
+	     Exit
              } 
               
            }}
