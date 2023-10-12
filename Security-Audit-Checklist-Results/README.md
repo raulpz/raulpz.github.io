@@ -6,6 +6,7 @@ Please download the attached PDF file, it has been properly modified to maintain
 <br />
 
 This for education\demo purposes ONLY.
+Logos and names are fictional and\or A.I. Generated.
 
 END
 
