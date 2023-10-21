@@ -1,4 +1,4 @@
-<h1>MariaDB - Using SQL queries to evluate suspicious login attempts</h1> 
+<h1>MariaDB - Using SQL queries to evaluate suspicious login attempts</h1> 
 
 <h2>Description</h2>
 As part of our monthly routine check, we need to explore our EMPLOYEES and LOG_IN_ATTEMPTS tables,  in search for suspicious patterns or login_attempts after business hours 6PM (18:00). 
